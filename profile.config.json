@@ -1,0 +1,11 @@
+{
+  "login": "ChadisBrad",
+  "promptUser": "sol",
+  "name": "Sol",
+  "portrait": "assets/portrait.json",
+  "status": "building agents and automation",
+  "whoami": [
+    "I build automation for messy, real-world work.",
+    "document extraction · workflow automation · AI agents"
+  ]
+}
