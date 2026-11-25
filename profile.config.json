@@ -1,0 +1,13 @@
+{
+  "name": "Sol Soleiman",
+  "tagline": "Insurance broker building the software.",
+  "facts": [
+    ["role", "Account Executive, PSC Insurance Brokers"],
+    ["founder", "SOLutions"],
+    ["based", "Melbourne, Australia"],
+    ["builds", "broker tools · document parsing · CRM + data"],
+    ["stack", "Python · JavaScript · SQL · Cloudflare"],
+    ["certs", "Tier 1 Insurance Broking · Cert IV Cyber Security"],
+    ["now", "a broking CRM with an MCP connector"]
+  ]
+}

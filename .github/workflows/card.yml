@@ -1,0 +1,31 @@
+name: Test card
+
+# The card has no live data, so nothing runs on a schedule. This only checks the generator
+# when it or the config changes. To rebuild the card: node scripts/gen-card.mjs, then commit.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/**"
+      - "profile.config.json"
+      - "assets/email/**"
+      - ".github/workflows/card.yml"
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      # Pinned to the commits the v4 tags pointed at on 19 Nov 2026.
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: 22
+
+      - name: Test the card and the email tile
+        run: node --test scripts/gen-card.test.mjs scripts/gen-tile.test.mjs
