@@ -12,6 +12,6 @@ I turn the work brokers still do by hand into software: the data underneath, the
 - **Broker Tools** · a PDS library, a template library, policy comparisons and schedule reformatting. Seconds instead of hours.
 - **Local-first security** · client documents are read on your own device and never uploaded. The tools are AES-256 encrypted, unlock in your browser, and sit behind Cloudflare Zero Trust sign-in.
 
-Most of it runs on real broker data, so the code is private. Ask and I'll walk you through it.
+Any questions? Ask and I'll walk you through it.
 
 [LinkedIn](https://www.linkedin.com/in/sol-soleiman-aba743337/) · [SOLUTION-OS case study](https://github.com/ChadisBrad/solution-os-case-study)
